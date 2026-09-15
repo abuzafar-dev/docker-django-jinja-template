@@ -60,7 +60,7 @@ TEMPLATES = [
         'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
-            'environment': 'root.jinja2.environment',
+            'environment': 'root.jinja.environment',
         },
     },
     {
