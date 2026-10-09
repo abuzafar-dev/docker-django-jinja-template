@@ -26,7 +26,8 @@ if not SECRET_KEY:
     raise RuntimeError('SECRET_KEY is not set (see .env.example)')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get('DEBUG', 'True') == 'True'
+# Standart holda yopiq; lokal ishlash uchun .env da DEBUG=True.
+DEBUG = os.environ.get('DEBUG', 'False') == 'True'
 
 ALLOWED_HOSTS = [h for h in os.environ.get('ALLOWED_HOSTS', '').split(',') if h]
 
